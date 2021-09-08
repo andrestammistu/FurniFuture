@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+
 .disabled{
     pointer-events: none;
     cursor: default;
@@ -12,4 +15,9 @@
 
 .gallerymargin{
     margin-top: 80px;;
+}
+
+.nav-item{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
 }
