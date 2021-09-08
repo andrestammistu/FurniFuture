@@ -1,0 +1,15 @@
+.disabled{
+    pointer-events: none;
+    cursor: default;
+}
+
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.gallerymargin{
+    margin-top: 80px;;
+}
