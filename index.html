@@ -21,7 +21,7 @@
                       <img src="images/logo.png" alt="FurniFuture" height="80">
                     </a>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="justify-content: center;flex: 1;">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Avaleht</a>
                       </li>
@@ -38,12 +38,16 @@
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                        <a class="nav-link" href="#kontakt" name="kontakt">Kontakt</a>
                       </li>
-                      <form class="container-fluid justify-content-start">
-                        <button class="btn btn-outline-success me-2" type="button">Logi sisse</button>
-                      </form>
                     </ul>
+
+                    <form class=" justify-content-start">
+                      <button class="btn btn-outline-success me-2" type="button">Logi sisse</button>
+                    </form>
+
+                    
+
                   </div>
                 </div>
               </nav>
@@ -70,6 +74,7 @@
                   <span class="visually-hidden">Next</span>
                 </button>
         </div>
+
         <div class="container gallerymargin">
             <div class="row row-cols-1 row-cols-md-3 g-6">
                 <div class="col">
@@ -92,7 +97,7 @@
                 <div>
                     <img src="images/esimene.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Kapid</h5>
+                    <h5 class="card-title">Kapid ja riiulid</h5>
                     </div>
                 </div>
                 </div>
@@ -121,8 +126,11 @@
                     </div>
                 </div>
             </div>
+
+        
+
             <div class="about-section">
-              <h1 id="meist">Meist</h1>
+              <h1 id="kontakt" href="#kontakt">Kontakt</h1>
               <p>Mööblipood</p>
               <p>veel ei tea mida kirj</p>
             </div>
@@ -148,7 +156,7 @@
                   <div class="container">
                     <h2>Andres </h2>
                     <p class="title">Analüütik</p>
-                    <p>Andres@furni.com</p>
+                    <p>andres@furni.com</p>
                     <p><button class="button">Contact</button></p>
                   </div>
                 </div>
@@ -179,11 +187,29 @@
                 </div>
               </div>
         </div>
+      </div>
 
         <footer>
 
+          <div id="footer">
+
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="FurniFuture" height="80">
+            </a>
+
+            <p>Võta meiega ühendust</p>
+
+            <form>
+              <input type="email" placeholder="Email"><br>
+              <input type="text" placeholder="Sõnum">
+            </form>
             
-            
+          </div>
+
         </footer>
+
+
     </body>
+
+
 </html>
