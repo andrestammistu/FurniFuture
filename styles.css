@@ -31,7 +31,7 @@
     display: flex;
 }
 
-.contactcard{
+.contactcard img{
     object-fit: cover;
     height: 50%;
 }
