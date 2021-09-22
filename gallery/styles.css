@@ -23,17 +23,11 @@
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  text-align: center;
-  margin:auto;
-  font-family: arial;
-  scale: 2 0.7
-}
-
-.price {
-  color: grey;
-  font-size: 22px;
+	display:flex;
+	justify-content: space-between;
+	border:1px solid black;
+	flex-wrap: nowrap;
+	margin: 20px;
 }
 
 .card button {
@@ -59,17 +53,16 @@
   padding: 10px;
 }
 
+.box {
+	flex: 0 0 40%;
+	text-align: center;
+	height: 100%;
+}
+
 .pilt {
-	height: 200px;
-	width: 300px;
+	max-height: 300px;
 }
 
 .text {
-   height: 100%;
-	width: 85%;
-	font-size: 15px;
-}
-
-.title {
-	font-size:32px;
+	height:125px;
 }
