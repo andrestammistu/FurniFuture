@@ -21,17 +21,3 @@
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
 }
-
-#footer{
-    background-color: #c18c57;
-    margin-top: 80px;
-}
-
-.footer-class{
-    display: flex;
-}
-
-.contactcard img{
-    object-fit: cover;
-    height: 50%;
-}
