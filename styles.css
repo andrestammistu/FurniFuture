@@ -22,7 +22,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.contactcard img{
+#footer{
+    background-color: #c18c57;
+    margin-top: 80px;
+}
+
+.footer-class{
+    display: flex;
+}
+
+.contactcard{
     object-fit: cover;
     height: 50%;
 }
