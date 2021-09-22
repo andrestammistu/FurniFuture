@@ -21,3 +21,8 @@
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
 }
+
+.contactcard img{
+    object-fit: cover;
+    height: 50%;
+}
