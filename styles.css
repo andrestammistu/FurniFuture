@@ -21,3 +21,45 @@
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
 }
+
+#footer{
+    background-color: #c18c57;
+    margin-top: 80px;
+}
+
+.footer-class{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactcard img{
+    object-fit: cover;
+    height: 50%;
+}
+
+.main_gallery:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+#popup-form{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    width: 25%;
+    height: 50%;
+    display: none;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+}
+
+
+
+.padding-top-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
