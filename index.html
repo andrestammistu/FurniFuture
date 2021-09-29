@@ -37,19 +37,31 @@
                             <li><a class="dropdown-item disabled" href="#">Vannituba</a></li>
                         </ul>
                       </li>
-                      <li class="nav-item">
+                      <!-- <li class="nav-item .d-block .d-sm-none">
                         <a class="nav-link" href="#kontakt" name="kontakt">Kontakt</a>
+                      </li> -->
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#tooted" name="tooted">Meie tooted</a>
                       </li>
-						                      <li class="nav-item">
-                        <a class="nav-link" href="#tooted" name="tooted">Meie Tooted</a>
-                      </li>
+                      <!-- <li class="nav-item .d-block .d-sm-none">
+                        <a class="nav-link" href="logisisse/index.html">Logi sisse</a>
+                      </li> -->
                     </ul>
 
                     <form class=" justify-content-start">
-                      <button class="btn btn-outline-success me-2" type="button">Logi sisse</button>
+                      <a class="btn btn-outline-success me-2" type="button" onclick="open_form()">Logi sisse</a>
                     </form>
 
-                    
+
+
+                    <!-- <nav class="navbar navbar-dark bg-dark .d-block .d-sm-none">
+                      <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      </div>
+                    </nav> -->
 
                   </div>
                 </div>
@@ -82,111 +94,92 @@
             <div class="row row-cols-1 row-cols-md-3 g-6">
                 <div class="col">
                 <div>
-                    <img src="images/chair-example.png" class="card-img-top" alt="tool">
+                    <img src="images/esimene.jpg" class="card-img-top main_gallery" alt="#">
                     <div class="card-body">
-                    <h5 class="card-title">Toolid</h5>
+                    <h5 class="card-title">Elutuba</h5>
                     </div>
                 </div>
                 </div>
                 <div class="col">
                 <div>
-                    <img src="images/teine.jpg" class="card-img-top" alt="...">
+                    <img src="images/esimene.jpg" class="card-img-top main_gallery" alt="#">
                     <div class="card-body">
-                    <h5 class="card-title">Lauad</h5>
+                    <h5 class="card-title">Magamistuba</h5>
                     </div>
                 </div>
                 </div>
                 <div class="col">
                 <div>
-                    <img src="images/esimene.jpg" class="card-img-top" alt="...">
+                    <img src="images/table.png" class="card-img-top main_gallery" alt="laud">
                     <div class="card-body">
-                    <h5 class="card-title">Kapid ja riiulid</h5>
+                    <h5 class="card-title">Kontor</h5>
                     </div>
                 </div>
                 </div>
                 <div class="col">
                     <div>
-                    <img src="images/esimene.jpg" class="card-img-top" alt="...">
+                    <img src="images/chair-example.png" class="card-img-top main_gallery" alt="tool">
                     <div class="card-body">
-                        <h5 class="card-title">Diivanid</h5>
+                        <h5 class="card-title">Köök</h5>
                     </div>
                     </div>
                 </div>
                 <div class="col">
                     <div>
-                    <img src="images/esimene.jpg" class="card-img-top" alt="...">
+                    <img src="images/esimene.jpg" class="card-img-top main_gallery" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Tugitoolid</h5>
+                        <h5 class="card-title">Vannituba</h5>
                     </div>
                     </div>
                 </div>
                 <div class="col">
                     <div>
-                    <img src="images/esimene.jpg" class="card-img-top" alt="...">
+                    <img src="images/esimene.jpg" class="card-img-top main_gallery" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Voodid</h5>
+                        <h5 class="card-title">Sisekujundus</h5>
                     </div>
                     </div>
                 </div>
             </div>
 
-        
 
-            <div class="about-section">
-				<br>
-				<p>&nbsp;</p>
-              <h1 id="kontakt" href="#kontakt">Kontakt</h1>
-				<br>
-              <p><strong>FurniFuture Laohoone</strong></p>
-				<p><strong>E-R 10.00-18.00</strong></p>
-				<p><strong>L 10.00-16.00</strong></p>
-				<p><strong>P suletud</strong></p>
-				<p>(Address)</p>
-				<p>Ladu@FurniFuture.ee</p>
-				<p>Tel : +372 (Number)</p>
-				<p>&nbsp;</p>
-				<p><strong>Üldinfo :</strong></p>
-				<p>+372 (Number)</p> 
-				<p>Info@FurniFuture.ee</p>
-				<p>&nbsp;</p>
 
-            </div>
-            
-            <h1 style="text-align:center" id="">Meie liikmed</h1>
-			<p>&nbsp;</p>
-            <div class="row">
-              <!-- Piltide pikkused ühesugusteks, et kastid oleksid samal tasemel -->
+            <div class="about-section padding-top-50">
+                  
+              <h1 style="text-align:center" id="">Meie liikmed</h1>
+              <p>&nbsp;</p>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
               <div class="col">
-                <div class="card">
-                  <img src="images/icon.jpg" alt="Harri" style="width:100%">
+                <div class="card contactcard h-100">
+                  <img src="images/icon.jpg" alt="Harri">
                   <div class="container">
-                    <h2>Harri </h2>
+                    <h2>Harri Liimann</h2>
                     <p class="title">Arhitekt</p>
-                    <p>Harri@FurniFuture.ee</p>
+                    <p>harri.liimann@furnifuture.com</p>
                     <p><button class="button">Contact</button></p>
                   </div>
                 </div>
               </div>              
                             
               <div class="col">
-                <div class="card">
-                  <img src="images/icon.jpg" alt="Andres" style="width:100%">
+                <div class="card contactcard h-100">
+                  <img src="images/icon.jpg" alt="Andres">
                   <div class="container">
-                    <h2>Andres </h2>
+                    <h2>Andres Tammistu</h2>
                     <p class="title">Analüütik</p>
-                    <p>Andres@FurniFuture.ee</p>
+                    <p>andres.tammistu@furnifuture.com</p>
                     <p><button class="button">Contact</button></p>
                   </div>
                 </div>
               </div>
 
               <div class="col">
-                <div class="card">
-                  <img src="images/icon.jpg" alt="Ingela" style="width:100%">
+                <div class="card contactcard h-100">
+                  <img src="images/icon.jpg" alt="Ingela">
                   <div class="container">
-                    <h2>Ingela </h2>
+                    <h2>Ingela Rohusaar</h2>
                     <p class="title">Programmeerija</p>
-                    <p>Ingela@FurniFuture.ee</p>
+                    <p>ingela.rohusaar@furnifuture.com</p>
                     <p><button class="button">Contact</button></p>
                   </div>
                 </div>
@@ -194,12 +187,12 @@
 
               
               <div class="col">
-                <div class="card">
-                  <img src="images/icon.jpg" alt="Rasmus" style="width:100%">
+                <div class="card contactcard h-100">
+                  <img src="images/icon.jpg" alt="Rasmus">
                   <div class="container">
-                    <h2>Rasmus </h2>
+                    <h2>Rasmus Sokk</h2>
                     <p class="title">Programeerija praktikant</p>
-                    <p>Rasmus@FurniFuture.ee</p>
+                    <p>rasmus.sokk@furnifuture.com</p>
                     <p><button class="button">Contact</button></p>
                   </div>
                 </div>
@@ -207,27 +200,80 @@
         </div>
       </div>
 
-        <footer>
 
-          <div id="footer">
-<br>
+
+
+      <div id="popup-form">
+        <h1>LOGI SISSE</h1>
+        <form>
+            <label for="email">Email</label><br>
+            <input type="email" name="email"><br><br>
+            <label for="parool">Parool</label><br>
+            <input type="password" name="parool"><br><br>
+            <input type="submit">
+        </form>
+        <button>Või registreeri</button>
+    </div>
+
+    <div class="padding-top-50">
+      <h1 id="tooted" href="#tooted" style="text-align:center">Meie Tooted</h1>
+      <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/611482353?h=ce441b7891&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay:1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:50%;align-content: center;" title="Trailer.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+    </div>
+
+
+    <script>
+        function open_form(){
+            document.getElementById("popup-form").style.display ="block";
+            //document.body.style.opacity = 0.5;
+        }
+    </script>
+
+
+
+      <footer id="footer">
+
+         <div class="footer-class">
+
+          <div class="padding-top-50">
             <a class="navbar-brand" href="#">
-              <img src="images/logo.png" alt="FurniFuture" height="80">
+              <img src="images/logo.png" alt="FurniFuture" height="100">
             </a>
-            <p>Võta meiega ühendust</p>
-
-            <form>
-              <input type="email" placeholder="Email"><br>
-              <input type="text" placeholder="Sõnum">
-            </form>
-			<p>&nbsp;</p>
-              <h1 id="tooted" href="#tooted" style="text-align:center">Meie Tooted</h1>
-			  <p>&nbsp;</p>
-<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/611482353?h=ce441b7891&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay:1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:50%;align-content: center;" title="Trailer.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            
           </div>
 
-        </footer>
+          <div class="padding-top-50">
+            <h3>MEIE TOOTED</h3>
+            <a href="#">Elutuba</a><br>
+            <a href="#">Magamistuba</a><br>
+            <a href="#">Kontor</a><br>
+            <a href="#">Köök</a><br>
+            <a href="#">Vannituba</a><br>
+            <a href="#">Sisekujundus</a>
+          </div>
+
+          <div class="padding-top-50">
+            <h3>OLULINE TEAVE</h1>
+            <a href="#">Privaatsuspoliitika</a><br>
+            <a href="#">Tingimused</a>
+          </div>
+
+          <form id="contact_form" class="padding-top-50">
+              <h3>KONTAKT</h1><br>
+              <p><strong>FurniFuture laohoone</strong></p>
+              <p><strong>E-R 10.00-18.00</strong></p>
+              <p><strong>L 10.00-16.00</strong></p>
+              <p><strong>P suletud</strong></p>
+              <p>(Address)</p>
+              <p>ladu@furnifuture.ee</p>
+              <p>Tel : +372 (Number)</p>
+              <p><strong>Üldinfo :</strong></p>
+              <p>+372 (Number)</p> 
+              <p>info@furnifuture.ee</p>
+          </form>
+          
+        </div> 
+
+      </footer>
 
 
     </body>
