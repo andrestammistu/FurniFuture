@@ -7,9 +7,13 @@
     "next": "^11.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
     "sequelize": "^6.6.5"
   },
   "devDependencies": {
+=======
+    "sequelize": "^6.6.5",
+>>>>>>> f0574649010aa3dae3a07c9ebf2da8adbd79b9ae
     "sequelize-cli": "^6.2.0"
   },
   "scripts": {
