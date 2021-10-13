@@ -1,18 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 
 
-#footer{
-    background-color: #c18c57;
-    margin-top: 80px;
-}
-
-
-.footer-class{
-    display: flex;
-    justify-content: space-around;
-}
-
-
 .contactcard img{
     object-fit: cover;
     height: 50%;
