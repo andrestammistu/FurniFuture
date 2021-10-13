@@ -10,8 +10,7 @@ export default function Header(){
                     <Link href="#">
                         <a class="navbar-brand" >
                             <Image 
-                                // src="../public/images/logo.png" 
-                                src="/public/images/logo.png" 
+                                src="/images/logo.png" 
                                 alt="FurniFuture" 
                                 height="80"
                                 width="100%" />
