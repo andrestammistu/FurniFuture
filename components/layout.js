@@ -217,6 +217,40 @@ export default function Layout(){
                                 </div>
                             </div>
 
+
+                            {/* <div id="popup-form">
+                                    <h1>LOGI SISSE</h1>
+                                    <form>
+                                        <label for="email">Email</label><br/>
+                                        <input type="email" name="email"><br/><br/>
+                                        <label for="parool">Parool</label><br/>
+                                        <input type="password" name="parool"><br/><br/>
+                                        <input type="submit">
+                                    </form>
+                                    <button>Või registreeri</button>
+                                </div>
+                            
+                                <div class="padding-top-50">
+                                <h1 id="tooted" href="#tooted" style="text-align:center">Meie Tooted</h1>
+                                <div style="padding:75% 0 0 0;position:relative;">
+                                        <iframe src="https://player.vimeo.com/video/611482353?h=ce441b7891&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay:1" 
+                                            frameborder="0" 
+                                            allow="autoplay; fullscreen; picture-in-picture" 
+                                            allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:50%;align-content: center;" 
+                                            title="Trailer.mp4">
+                                        </iframe>
+                                    </div><script src="https://player.vimeo.com/api/player.js"></script>
+                                </div>
+                            
+                            
+                                {/* <script>
+                                    function open_form(){
+                                        document.getElementById("popup-form").style.display ="block";
+                                        //document.body.style.opacity = 0.5;
+                                    }
+                                </script> */} 
+                                
+
                         </div>
                     </Container>
             </main>
