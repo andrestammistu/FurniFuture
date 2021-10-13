@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 
 
 export default function Footer(){
@@ -8,7 +8,11 @@ export default function Footer(){
 
             <div class="padding-top-50">
                 <a class="navbar-brand" href="#">
-                <Image src="../public/images/logo.png" alt="FurniFuture" height="100"/>
+                <Image 
+                    src="/public/images/logo.png" 
+                    alt="FurniFuture" 
+                    height="100"
+                    width="100%" />
                 </a>
             </div>
 
