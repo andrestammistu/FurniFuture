@@ -1,4 +1,5 @@
-
+import Link from 'next/link'
+import Image from 'next/image'
 
 
 export default function Header(){
@@ -9,17 +10,20 @@ export default function Header(){
                     <Link href="#">
                         <a class="navbar-brand" >
                             <Image 
-                                src="../public/images/logo.png" 
+                                // src="../public/images/logo.png" 
+                                src="/public/images/logo.png" 
                                 alt="FurniFuture" 
-                                height="80"/>
+                                height="80"
+                                width="100%" />
                         </a>
                     </Link>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="justify-content: center;flex: 1;">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                        {/* style="justify-content: center;flex: 1;" */}
                         <li class="nav-item">
                             <Link href="#">
                                 <a class="nav-link active" aria-current="page">Avaleht</a>
-                                </Link>
+                            </Link>
                         </li>
                         <li class="nav-item dropdown">
                             <Link href="#">
