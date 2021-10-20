@@ -2,7 +2,7 @@ import styles from './layout.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Header from './header.js'
+import Header1 from './header1.js'
 import Footer from './footer.js'
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
@@ -27,7 +27,7 @@ export default function Layout(){
             </Head>
 
 
-            <Header></Header>
+            <Header1></Header1>
 
 
             <main>
