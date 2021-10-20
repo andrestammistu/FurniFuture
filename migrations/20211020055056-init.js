@@ -2,11 +2,9 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    /**
-     * Add altering commands here.
-     *
-     * Example:
-     */
+
+
+    // TABLES
    await queryInterface.createTable('users', { 
       id: {
         type: Sequelize.INTEGER,
@@ -113,13 +111,15 @@ module.exports = {
          allowNull: false
       }
    });
-   
+
+
+   // CONSTRAINTS
    await queryInterface.addConstraint('orders', {
       fields: ['user_id'],
       type: 'foreign key',
-      references: {
-         table: 'users', // target table
-         field: 'id' // target field
+      references: { // target
+         table: 'users',
+         field: 'id'
       },
       onDelete: 'cascade',
       onUpdate: 'no action'
@@ -128,11 +128,47 @@ module.exports = {
    await queryInterface.addConstraint('orders', {
       fields: ['id'],
       type: 'foreign key',
-      references: {
+      references: { // target
          table: 'order_rows',
          field: 'order_id'
-      }
-   })
+      },
+      onDelete: 'cascade',
+      onUpdate: 'no action'
+   });
+
+   await queryInterface.addConstraint('products', {
+      fields: ['id'],
+      type: 'foreign key',
+      references: { // target
+         table: 'order_rows',
+         field: 'product_id'
+      },
+      onDelete: 'cascade',
+      onUpdate: 'no action'
+   });
+
+   await queryInterface.addConstraint('product_category', {
+      fields: ['id'],
+      type: 'foreign key',
+      references: { // target
+         table: 'products',
+         field: 'category_id'
+      },
+      onDelete: 'cascade',
+      onUpdate: 'no action'
+   });
+
+   await queryInterface.addConstraint('product_category', {
+      fields: ['id'],
+      type: 'foreign key',
+      references: { // target
+         table: 'product_category',
+         field: 'parent_id'
+      },
+      onDelete: 'cascade',
+      onUpdate: 'no action'
+   });
+
   },
 
   down: async (queryInterface, Sequelize) => {
@@ -144,5 +180,7 @@ module.exports = {
      await queryInterface.dropTable('users');
      await queryInterface.dropTable('orders');
      await queryInterface.dropTable('products');
+     await queryInterface.dropTable('product_category');
+     await queryInterface.dropTable('order_rows');
   }
 };
