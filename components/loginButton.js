@@ -2,12 +2,12 @@ import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import React, { useEffect, useState } from "react";
 import LoginForm from './loginForm.js'
+import Link from 'next/link'
 
 function MyVerticallyCenteredModal(props) {
     return (
       <Modal
         {...props}
-        size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
@@ -20,7 +20,10 @@ function MyVerticallyCenteredModal(props) {
             <LoginForm></LoginForm>
         </Modal.Body>
         <Modal.Footer>
-            <Button onClick={props.onHide}>Close</Button>
+            <p>Pole veel kasutaja? </p>
+            <Link href="/">
+                <a>Registreeru siin!</a>
+            </Link>
         </Modal.Footer>
       </Modal>
     );

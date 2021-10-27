@@ -8,18 +8,14 @@ export default function LoginForm(){
     return(
         <Form>
             <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-                <Form.Label column sm="2">
-                Email
-                </Form.Label>
+                <Form.Label>Email</Form.Label>
                 <Col sm="10">
                 <Form.Control type="email" placeholder="Email" />
                 </Col>
             </Form.Group>
 
             <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-                <Form.Label column sm="2">
-                    Password
-                </Form.Label>
+                <Form.Label>Password</Form.Label>
                 <Col sm="10">
                     <Form.Control type="password" placeholder="Password" />
                     <Link href="/">
