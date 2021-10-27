@@ -7,6 +7,7 @@ import Footer from './footer.js'
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import Gallery from './gallery.js';
 
 
 export default function Layout(){
@@ -53,65 +54,10 @@ export default function Layout(){
                 </div>
 
                     <Container>
+                        
+                        <Gallery></Gallery>
+
                         <div className={styles.gallerymargin}>
-                            <div className="row row-cols-1 row-cols-md-3 g-6">
-                                <div className="col">
-                                    <Card className={styles.main_gallery}>
-                                        <Card.Img variant="top" src="/images/sofa.png"/>
-                                        <Card.Body>
-                                            <Card.Title>Elutuba</Card.Title>
-                                        </Card.Body>
-                                    </Card>
-                                </div>
-
-                                <div className="col">
-                                    <Card className={styles.main_gallery}>
-                                        <Card.Img variant="top" src="/images/esimene.jpg" />
-                                        <Card.Body>
-                                            <Card.Title>Magamistuba</Card.Title>
-                                        </Card.Body>
-                                    </Card>
-                                </div>
-
-                                <div className="col">
-                                    <Card className={styles.main_gallery}>
-                                        <Card.Img variant="top" src="/images/table.png" />
-                                        <Card.Body>
-                                            <Card.Title>Kontor</Card.Title>
-                                        </Card.Body>
-                                    </Card>
-                                </div>
-
-                                <div className="col">
-                                    <Card className={styles.main_gallery}>
-                                        <Card.Img variant="top" src="/images/chair-example.png" />
-                                        <Card.Body>
-                                            <Card.Title>Köök</Card.Title>
-                                        </Card.Body>
-                                    </Card>
-                                </div>
-
-                                <div className="col">
-                                    <Card className={styles.main_gallery}>
-                                        <Card.Img variant="top" src="/images/esimene.jpg" />
-                                        <Card.Body>
-                                            <Card.Title>Vannituba</Card.Title>
-                                        </Card.Body>
-                                    </Card>
-                                </div>
-
-                                <div className="col">
-                                    <Card className={styles.main_gallery}>
-                                        <Card.Img variant="top" src="/images/esimene.jpg" />
-                                        <Card.Body>
-                                            <Card.Title>Sisekujundus</Card.Title>
-                                        </Card.Body>
-                                    </Card>
-                                </div>
-                            </div>
-                            
-
-
                             <div className="about-section padding-top-50">
                                 <h1 id="">Meie liikmed</h1> {/*style="text-align:center*/}
                                 <p>&nbsp;</p>
