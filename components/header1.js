@@ -13,40 +13,39 @@ export default function Header1(){
     return(
         <header>
             <Navbar>
-                <Container>
-                <Navbar.Brand href="#home">
-                    <img
-                    alt="FurniFuture" 
-                    height="80"
-                    width="100%"
-                    src="/images/logo.png"
-                    className="d-inline-block align-top"
-                    />{' '}
-                </Navbar.Brand>
+                <Container fluid>
+                    <Navbar.Brand href="#home">
+                        <img
+                        alt="FurniFuture" 
+                        height="80"
+                        width="100%"
+                        src="/images/logo.png"
+                        className="d-inline-block align-top"
+                        />{' '}
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
-                        className="mr-auto my-2 my-lg-0"
-                        style={{ maxHeight: '100px' }}
-                        navbarScroll
-                        >
-                        <Nav.Link href="#action1">Avaleht</Nav.Link>
-                        <NavDropdown title="Mööbel" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
-                        </NavDropdown>
+                            className="mr-auto my-2 my-lg-0"
+                            style={{ maxHeight: '100px', justifyContent: 'center', flex: 1 }}
+                            navbarScroll
+                            >
+                            <Nav.Link href="#action1">Avaleht</Nav.Link>
+                            <NavDropdown title="Mööbel" id="navbarScrollingDropdown">
+                                <NavDropdown.Item href="#action3">Kontor</NavDropdown.Item>
+                                <NavDropdown.Item href="#action4" disabled>Elutuba</NavDropdown.Item>
+                                <NavDropdown.Item href="#action4" disabled>Magamistuba</NavDropdown.Item>
+                                <NavDropdown.Item href="#action4" disabled>Köök</NavDropdown.Item>
+                                <NavDropdown.Item href="#action4" disabled>Vannituba</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action5" disabled>Something else here</NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link href="#kontakt">Kontakt</Nav.Link>
                         </Nav>
-                        {/* <Form className="d-flex">
-                        <FormControl
-                            type="search"
-                            placeholder="Search"
-                            className="mr-2"
-                            aria-label="Search"
-                        />
-                        <Button variant="outline-success">Search</Button>
-                        </Form> */}
+                        <Form className="d-flex">
+                            <Button variant="outline-success">Logi sisse</Button>
+                        </Form> 
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
