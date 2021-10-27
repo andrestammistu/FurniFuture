@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 
 
+.main_gallery{
+    border: none;
+    text-align: center;
+}
+
+.gallerymargin{
+    margin-top: 80px;
+}
+
+
 .contactcard img{
     object-fit: cover;
     height: 50%;

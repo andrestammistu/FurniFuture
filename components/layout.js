@@ -6,6 +6,7 @@ import Header from './header.js'
 import Footer from './footer.js'
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
+import Card from 'react-bootstrap/Card';
 
 
 export default function Layout(){
@@ -52,86 +53,60 @@ export default function Layout(){
                 </div>
 
                     <Container>
-                        <div>
+                        <div className={styles.gallerymargin}>
                             <div className="row row-cols-1 row-cols-md-3 g-6">
                                 <div className="col">
-                                    <div>
-                                        <Image 
-                                            src="/images/sofa.png" 
-                                            className="card-img-top main_gallery" 
-                                            width="100"
-                                            height="100%"
-                                            alt="#"/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">Elutuba</h5>
-                                        </div>
-                                    </div>
+                                    <Card className={styles.main_gallery}>
+                                        <Card.Img variant="top" src="/images/sofa.png"/>
+                                        <Card.Body>
+                                            <Card.Title>Elutuba</Card.Title>
+                                        </Card.Body>
+                                    </Card>
                                 </div>
 
                                 <div className="col">
-                                    <div>
-                                        <Image 
-                                            src="/images/esimene.jpg" 
-                                            className="card-img-top main_gallery"
-                                            width="100"
-                                            height="100%" 
-                                            alt="#"/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">Magamistuba</h5>
-                                        </div>
-                                    </div>
+                                    <Card className={styles.main_gallery}>
+                                        <Card.Img variant="top" src="/images/esimene.jpg" />
+                                        <Card.Body>
+                                            <Card.Title>Magamistuba</Card.Title>
+                                        </Card.Body>
+                                    </Card>
                                 </div>
+
                                 <div className="col">
-                                    <div>
-                                        <Image 
-                                            src="/images/table.png" 
-                                            className="card-img-top main_gallery" 
-                                            width="100"
-                                            height="100%"
-                                            alt="laud"/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">Kontor</h5>
-                                        </div>
-                                    </div>
+                                    <Card className={styles.main_gallery}>
+                                        <Card.Img variant="top" src="/images/table.png" />
+                                        <Card.Body>
+                                            <Card.Title>Kontor</Card.Title>
+                                        </Card.Body>
+                                    </Card>
                                 </div>
+
                                 <div className="col">
-                                    <div>
-                                        <Image 
-                                            src="/images/chair-example.png" 
-                                            className="card-img-top main_gallery" 
-                                            width="100"
-                                            height="100%"
-                                            alt="tool"/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">Köök</h5>
-                                        </div>
-                                    </div>
+                                    <Card className={styles.main_gallery}>
+                                        <Card.Img variant="top" src="/images/chair-example.png" />
+                                        <Card.Body>
+                                            <Card.Title>Köök</Card.Title>
+                                        </Card.Body>
+                                    </Card>
                                 </div>
+
                                 <div className="col">
-                                    <div>
-                                        <Image 
-                                            src="/images/esimene.jpg" 
-                                            className="card-img-top main_gallery" 
-                                            width="100"
-                                            height="100%"
-                                            alt="..."/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">Vannituba</h5>
-                                        </div>
-                                    </div>
+                                    <Card className={styles.main_gallery}>
+                                        <Card.Img variant="top" src="/images/esimene.jpg" />
+                                        <Card.Body>
+                                            <Card.Title>Vannituba</Card.Title>
+                                        </Card.Body>
+                                    </Card>
                                 </div>
+
                                 <div className="col">
-                                    <div>
-                                        <Image 
-                                            src="/images/esimene.jpg" 
-                                            className="card-img-top main_gallery" 
-                                            width="100"
-                                            height="100%"
-                                            alt="..."/>
-                                        <div className="card-body">
-                                            <h5 className="card-title">Sisekujundus</h5>
-                                        </div>
-                                    </div>
+                                    <Card className={styles.main_gallery}>
+                                        <Card.Img variant="top" src="/images/esimene.jpg" />
+                                        <Card.Body>
+                                            <Card.Title>Sisekujundus</Card.Title>
+                                        </Card.Body>
+                                    </Card>
                                 </div>
                             </div>
                             
