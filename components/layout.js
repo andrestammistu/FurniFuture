@@ -2,7 +2,7 @@ import styles from './layout.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Header1 from './header1.js'
+import Header from './header.js'
 import Footer from './footer.js'
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
@@ -27,7 +27,7 @@ export default function Layout(){
             </Head>
 
 
-            <Header1></Header1>
+            <Header></Header>
 
 
             <main>
@@ -52,7 +52,7 @@ export default function Layout(){
                 </div>
 
                     <Container>
-                        <div className=" gallerymargin">
+                        <div>
                             <div className="row row-cols-1 row-cols-md-3 g-6">
                                 <div className="col">
                                     <div>

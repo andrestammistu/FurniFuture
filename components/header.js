@@ -1,76 +1,53 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 
 export default function Header(){
     return(
         <header>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="container-fluid">
-                    <Link href="#">
-                        <a className="navbar-brand" >
-                            <Image 
-                                src="/images/logo.png" 
-                                alt="FurniFuture" 
-                                height="80"
-                                width="100%" />
-                        </a>
-                    </Link>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0"> 
-                        {/* style="justify-content: center;flex: 1;" */}
-                        <li className="nav-item">
-                            <Link href="#">
-                                <a className="nav-link active" aria-current="page">Avaleht</a>
-                            </Link>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <Link href="#">
-                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mööbel</a>
-                            </Link>
-                            <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li>
-                                    <Link href="#">
-                                        <a className="dropdown-item">Kontor</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#">
-                                        <a className="dropdown-item disabled" id="" aria-disabled="true">Elutuba</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#">
-                                        <a className="dropdown-item disabled">Magamistuba</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#">
-                                        <a className="dropdown-item disabled">Köök</a>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#">
-                                        <a className="dropdown-item disabled">Vannituba</a>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="nav-item">
-                            <Link href="#kontakt">
-                                <a className="nav-link" name="kontakt">Kontakt</a>
-                            </Link>
-                        </li>
-                        </ul>
+            <Navbar>
+                <Container fluid>
+                    <Navbar.Brand href="#home">
+                        <img
+                        alt="FurniFuture" 
+                        height="80"
+                        width="100%"
+                        src="/images/logo.png"
+                        className="d-inline-block align-top"
+                        />{' '}
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="navbarScroll" />
+                    <Navbar.Collapse id="navbarScroll">
+                        <Nav
+                            className="mr-auto my-2 my-lg-0"
+                            style={{ maxHeight: '100px', justifyContent: 'center', flex: 1 }}
+                            navbarScroll
+                            >
+                            <Nav.Link href="#action1">Avaleht</Nav.Link>
+                            <NavDropdown title="Mööbel" id="navbarScrollingDropdown">
+                                <NavDropdown.Item href="#action3">Kontor</NavDropdown.Item>
+                                <NavDropdown.Item href="#action4" disabled>Elutuba</NavDropdown.Item>
+                                <NavDropdown.Item href="#action4" disabled>Magamistuba</NavDropdown.Item>
+                                <NavDropdown.Item href="#action4" disabled>Köök</NavDropdown.Item>
+                                <NavDropdown.Item href="#action4" disabled>Vannituba</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action5" disabled>Something else here</NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link href="#kontakt">Kontakt</Nav.Link>
+                        </Nav>
+                        <Form className="d-flex">
+                            <Button variant="outline-success">Logi sisse</Button>
+                        </Form> 
 
-                        <form className=" justify-content-start">
-                        <Link href="logisisse/index.html">
-                            <a className="btn btn-outline-success me-2" type="button">Logi sisse</a>
-                        </Link>
-                        </form>
-                    </div>
-                </div>
-            </nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </header>
     )
 }
