@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import React, { useEffect, useState } from "react";
+import LoginForm from './loginForm.js'
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -11,20 +12,15 @@ function MyVerticallyCenteredModal(props) {
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
+            <Modal.Title id="contained-modal-title-vcenter">
             Logi sisse
-          </Modal.Title>
+            </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
-          </p>
+            <LoginForm></LoginForm>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
+            <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
