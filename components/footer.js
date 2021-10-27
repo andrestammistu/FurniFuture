@@ -7,10 +7,10 @@ export default function Footer(){
         
         <footer id={footerStyles.footer}>
 
-            <div className={footerStyles.footerClass}>
+            <div className={footerStyles.footerclass}>
 
                 <div class="padding-top-50">
-                    <a class="navbar-brand" href="#">
+                    <a className="navbar-brand" href="#">
                     <Image 
                         src="/images/logo.png" 
                         alt="FurniFuture" 
@@ -19,7 +19,7 @@ export default function Footer(){
                     </a>
                 </div>
 
-                <div class="padding-top-50">
+                <div className="padding-top-50">
                     <h3>MEIE TOOTED</h3>
                     <a href="#">Elutuba</a><br/>
                     <a href="#">Magamistuba</a><br/>
@@ -29,13 +29,13 @@ export default function Footer(){
                     <a href="#">Sisekujundus</a>
                 </div>
 
-                <div class="padding-top-50">
+                <div className="padding-top-50">
                     <h3>OLULINE TEAVE</h3>
                     <a href="#">Privaatsuspoliitika</a><br/>
                     <a href="#">Tingimused</a>
                 </div>
 
-                <form id="contact_form" class="padding-top-50">
+                <form id="contact_form" className="padding-top-50">
                     <h3>KONTAKT</h3><br/>
                     <p><strong>FurniFuture laohoone</strong></p>
                     <p><strong>E-R 10.00-18.00</strong></p>
