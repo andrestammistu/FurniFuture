@@ -11,3 +11,8 @@
     display: flex;
     justify-content: space-around;
 }
+
+.padding-top-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

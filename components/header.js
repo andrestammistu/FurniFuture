@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import LoginButton from './loginButton'
 
 
 export default function Header(){
@@ -42,7 +43,8 @@ export default function Header(){
                             <Nav.Link href="#kontakt">Kontakt</Nav.Link>
                         </Nav>
                         <Form className="d-flex">
-                            <Button variant="outline-success">Logi sisse</Button>
+                            {/* <Button variant="outline-success">Logi sisse</Button> */}
+                            <LoginButton></LoginButton>
                         </Form> 
 
                     </Navbar.Collapse>

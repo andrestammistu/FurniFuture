@@ -7,7 +7,7 @@ export default function Footer(){
         
         <footer id={footerStyles.footer}>
 
-            <div className={footerStyles.footerclass}>
+            <div className={footerStyles.footerClass}>
 
                 <div class="padding-top-50">
                     <a className="navbar-brand" href="#">
