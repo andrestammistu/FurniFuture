@@ -6,8 +6,8 @@ import Header from './header.js'
 import Footer from './footer.js'
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
 import Gallery from './gallery.js';
+import Contact from './contact.js'
 
 
 export default function Layout(){
@@ -56,79 +56,7 @@ export default function Layout(){
                     <Container>
                         
                         <Gallery></Gallery>
-
-                        <div className={styles.gallerymargin}>
-                            <div className="about-section padding-top-50">
-                                <h1 id="">Meie liikmed</h1> {/*style="text-align:center*/}
-                                <p>&nbsp;</p>
-                                <div className="row row-cols-1 row-cols-md-4 g-4">
-                                    <div className="col">
-                                        <div className="card contactcard h-100">
-                                            <Image 
-                                                src="/images/icon.jpg" 
-                                                width="100%"
-                                                height="100%"
-                                                alt="Harri"/>
-                                            <div className="container">
-                                                <h2>Harri Liimann</h2>
-                                                <p className="title">Arhitekt</p>
-                                                <p>harri.liimann@furnifuture.com</p>
-                                                <p><button className="button">Contact</button></p>
-                                            </div>
-                                        </div>
-                                    </div>              
-                                                
-                                    <div className="col">
-                                        <div className="card contactcard h-100">
-                                            <Image 
-                                                src="/images/icon.jpg" 
-                                                width="100%"
-                                                height="100%"
-                                                alt="Andres"/>
-                                            <div className="container">
-                                                <h2>Andres Tammistu</h2>
-                                                <p className="title">Analüütik</p>
-                                                <p>andres.tammistu@furnifuture.com</p>
-                                                <p><button className="button">Contact</button></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                        
-                                    <div className="col">
-                                        <div className="card contactcard h-100">
-                                            <Image 
-                                                src="/images/icon.jpg" 
-                                                width="100%"
-                                                height="100%"
-                                                alt="Ingela"/>
-                                            <div className="container">
-                                                <h2>Ingela Rohusaar</h2>
-                                                <p className="title">Programmeerija</p>
-                                                <p>ingela.rohusaar@furnifuture.com</p>
-                                                <p><button className="button">Contact</button></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                        
-                                    
-                                    <div className="col">
-                                        <div className="card contactcard h-100">
-                                            <Image 
-                                                src="/images/icon.jpg" 
-                                                width="100%"
-                                                height="100%"
-                                                alt="Rasmus"/>
-                                            <div className="container">
-                                                <h2>Rasmus Sokk</h2>
-                                                <p className="title">Programeerija praktikant</p>
-                                                <p>rasmus.sokk@furnifuture.com</p>
-                                                <p><button className="button">Contact</button></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <Contact></Contact>
 
                             {/* <div id="popup-form">
                                     <h1>LOGI SISSE</h1>
@@ -162,8 +90,6 @@ export default function Layout(){
                                     }
                                 </script> */} 
                                 
-
-                        </div>
                     </Container>
             </main>
 
