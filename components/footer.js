@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import footerStyles from '../styles/footer.module.css'
 
 
@@ -21,18 +22,20 @@ export default function Footer(){
 
                 <div className="padding-top-50">
                     <h3>MEIE TOOTED</h3>
-                    <a href="#">Elutuba</a><br/>
-                    <a href="#">Magamistuba</a><br/>
-                    <a href="#">Kontor</a><br/>
-                    <a href="#">Köök</a><br/>
-                    <a href="#">Vannituba</a><br/>
-                    <a href="#">Sisekujundus</a>
+                    <Link href="#"><a>Elutuba</a></Link><br/>
+                    <Link href="#"><a>Magamistuba</a></Link><br/>
+                    <Link href="#"><a>Kontor</a></Link><br/>
+                    <Link href="#"><a>Köök</a></Link><br/>
+                    <Link href="#"><a>Vannituba</a></Link><br/>
+                    <Link href="#"><a>Sisekujundus</a></Link><br/>
                 </div>
 
                 <div className="padding-top-50">
                     <h3>OLULINE TEAVE</h3>
-                    <a href="#">Privaatsuspoliitika</a><br/>
-                    <a href="#">Tingimused</a>
+                    <Link href="#"><a>Privaatsuspoliitika</a></Link><br/>
+                    <Link href="#"><a>Privaatsuspoliitika</a></Link><br/>
+                    <Link href="#"><a>Tingimused</a></Link><br/>
+                    
                 </div>
 
                 <form id="contact_form" className="padding-top-50">
