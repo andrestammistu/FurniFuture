@@ -5,9 +5,12 @@ import Container from 'react-bootstrap/Container';
 import Gallery from './gallery.js';
 import Contact from './contact.js'
 import VideoPlayer from './VideoPlayer'
+import galleryStyles from '../styles/gallery.module.css'
+
 
 
 export default function Layout(){
+
     return(
         <div>
             <Header></Header>
@@ -34,7 +37,13 @@ export default function Layout(){
 
                 <Container>
 
-                    <Gallery></Gallery>
+                    
+                    <div className={galleryStyles.gallerymargin}>
+                        <div className="row row-cols-1 row-cols-md-3 g-6">
+                                <Gallery></Gallery>
+                        </div>
+                    </div>
+
                     <Contact></Contact>
                     <VideoPlayer></VideoPlayer>
                         
