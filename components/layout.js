@@ -52,22 +52,9 @@ export default function Layout(){
                 </div>
 
                 <Container>
+
                     <Gallery></Gallery>
                     <Contact></Contact>
-
-                    {/* <div className="padding-top-50">
-                        <h1 id="tooted">Meie tooted</h1>
-                        <div style={{padding: "75% 0 0 0", position:"relative"}}></div>
-                        <iframe src="https://player.vimeo.com/video/611482353?h=ce441b7891&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay:1"
-                            frameBorder="0"
-                            allow="autoplay; fullscreen; picture-in-picture"
-                            allowFullScreen
-                            style={{position:"absolute", top:0, left:0, width:"100%", height:"50%", alignContent: "center"}}
-                            title="Trailer.mp4">
-                        </iframe>
-                        <script src="https://player.vimeo.com/api/player.js"></script>
-                    </div> */}
-
                     <VideoPlayer></VideoPlayer>
                         
                 </Container>
