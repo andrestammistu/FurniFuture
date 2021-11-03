@@ -1,6 +1,6 @@
 'use strict';
 
-import Client from './client.js';
+import Client from './user.js';
 import Sequelize from 'sequelize';
 import configFile from __dirname + '/../config/config.json';
 
@@ -20,6 +20,7 @@ let sequelize = new Sequelize(sequelizeParameters);
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+
 Client(sequelize, Sequelize)
 db.Client = sequelize.models.Client
 
