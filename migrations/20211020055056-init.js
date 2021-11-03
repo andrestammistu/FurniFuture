@@ -15,7 +15,7 @@ module.exports = {
         allowNull: false
       },
       name: {
-        type: Sequelize.NAME,
+        type: Sequelize.STRING,
         allowNull: false
       }, 
       password: {
@@ -43,7 +43,7 @@ module.exports = {
          allowNull: false
       },
       datetime: {
-         type: Sequelize.DATETIME,
+         type: Sequelize.DATE,
          allowNull: false
       },
       paid: {
@@ -69,7 +69,7 @@ module.exports = {
       }
    });
 
-   await queryInterface.createTable('product_category' {
+   await queryInterface.createTable('product_category', {
       id: {
          type: Sequelize.INTEGER,
          allowNull: false,
@@ -112,34 +112,34 @@ module.exports = {
 
 
    // CONSTRAINTS
-   await queryInterface.addConstraint('orders', {
-      fields: ['user_id'],
+   // await queryInterface.addConstraint('orders', {
+   //    fields: ['user_id'],
+   //    type: 'foreign key',
+   //    references: { // target
+   //       table: 'users',
+   //       field: 'id'
+   //    },
+   //    onDelete: 'cascade',
+   //    onUpdate: 'no action'
+   // });
+
+   await queryInterface.addConstraint('order_rows', {
+      fields: ['order_id'],
       type: 'foreign key',
       references: { // target
-         table: 'users',
+         table: 'orders',
          field: 'id'
       },
       onDelete: 'cascade',
       onUpdate: 'no action'
    });
 
-   await queryInterface.addConstraint('orders', {
-      fields: ['id'],
+   await queryInterface.addConstraint('order_rows', {
+      fields: ['product_id'],
       type: 'foreign key',
       references: { // target
-         table: 'order_rows',
-         field: 'order_id'
-      },
-      onDelete: 'cascade',
-      onUpdate: 'no action'
-   });
-
-   await queryInterface.addConstraint('products', {
-      fields: ['id'],
-      type: 'foreign key',
-      references: { // target
-         table: 'order_rows',
-         field: 'product_id'
+         table: 'products',
+         field: 'id'
       },
       onDelete: 'cascade',
       onUpdate: 'no action'
