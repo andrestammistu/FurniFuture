@@ -112,16 +112,16 @@ module.exports = {
 
 
    // CONSTRAINTS
-   // await queryInterface.addConstraint('orders', {
-   //    fields: ['user_id'],
-   //    type: 'foreign key',
-   //    references: { // target
-   //       table: 'users',
-   //       field: 'id'
-   //    },
-   //    onDelete: 'cascade',
-   //    onUpdate: 'no action'
-   // });
+   await queryInterface.addConstraint('orders', {
+      fields: ['user_id'],
+      type: 'foreign key',
+      references: { // target
+         table: 'users',
+         field: 'id'
+      },
+      onDelete: 'cascade',
+      onUpdate: 'no action'
+   });
 
    await queryInterface.addConstraint('order_rows', {
       fields: ['order_id'],
@@ -145,23 +145,23 @@ module.exports = {
       onUpdate: 'no action'
    });
 
-   await queryInterface.addConstraint('product_category', {
-      fields: ['id'],
+   await queryInterface.addConstraint('products', {
+      fields: ['category_id'],
       type: 'foreign key',
       references: { // target
-         table: 'products',
-         field: 'category_id'
+         table: 'product_category',
+         field: 'id'
       },
       onDelete: 'cascade',
       onUpdate: 'no action'
    });
 
    await queryInterface.addConstraint('product_category', {
-      fields: ['id'],
+      fields: ['parent_id'],
       type: 'foreign key',
       references: { // target
          table: 'product_category',
-         field: 'parent_id'
+         field: 'id'
       },
       onDelete: 'cascade',
       onUpdate: 'no action'
