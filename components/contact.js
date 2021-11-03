@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 
 export default function Contact(){
     return(
-        <div className="gallerymargin">
+        <div className="gallerymargin" style={{paddingTop: "100px"}}>
             <div className="about-section padding-top-50">
                 <h1 id="">Meie liikmed</h1> {/*style="text-align:center*/}
                 <p>&nbsp;</p>

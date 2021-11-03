@@ -9,14 +9,14 @@ export default function LoginForm(){
         <Form>
             <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
                 <Form.Label>Email</Form.Label>
-                <Col sm="10">
-                <Form.Control type="email" placeholder="Email" />
+                <Col>
+                    <Form.Control type="email" placeholder="Email" />
                 </Col>
             </Form.Group>
 
             <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
                 <Form.Label>Password</Form.Label>
-                <Col sm="10">
+                <Col>
                     <Form.Control type="password" placeholder="Password" />
                     <Link href="/">
                         <a>Unustasid parooli?</a>
