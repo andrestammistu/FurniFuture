@@ -15,14 +15,14 @@ export default class Layout extends React.Component{
                 <Header></Header>
                 <div style={{display:"flex", marginTop:"30px"}}>
                     <NavItems/>
-                    <div className={galleryStyles.gallerymargin} style={{width:"80%"}}>
+                    <div className={galleryStyles.gallerymargin} style={{width:"80%", marginLeft:"20px"}}>
                         <div className="row row-cols-1 row-cols-md-3 g-6">
                                 <Gallery image={"/images/sofa.png"} heading="Elutuba"/>
-                                <Gallery image={"/images/esimene.jpg"} heading="Magamistuba"/>
+                                <Gallery image={"/images/sofa.png"} heading="Magamistuba"/>
                                 <Gallery image={"/images/table.png"} heading="Kontor"/>
                                 <Gallery image={"/images/chair-example.png"} heading="Köök"/>
-                                <Gallery image={"/images/esimene.jpg"} heading="Vannituba"/>
-                                <Gallery image={"/images/esimene.jpg"} heading="Sisekujundus"/>
+                                <Gallery image={"/images/sofa.png"} heading="Vannituba"/>
+                                <Gallery image={"/images/sofa.png"} heading="Sisekujundus"/>
                         </div>
                     </div>
                 </div>
