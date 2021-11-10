@@ -40,7 +40,12 @@ export default function Layout(){
                     
                     <div className={galleryStyles.gallerymargin}>
                         <div className="row row-cols-1 row-cols-md-3 g-6">
-                                <Gallery></Gallery>
+                            <Gallery image={"/images/sofa.png"} heading="Elutuba" url="/products"/>
+                            <Gallery image={"/images/esimene.jpg"} heading="Magamistuba" url="/products"/>
+                            <Gallery image={"/images/table.png"} heading="Kontor" url="/products"/>
+                            <Gallery image={"/images/chair-example.png"} heading="Köök" url="/products"/>
+                            <Gallery image={"/images/esimene.jpg"} heading="Vannituba" url="/products"/>
+                            <Gallery image={"/images/esimene.jpg"} heading="Sisekujundus" url="/products"/>
                         </div>
                     </div>
 

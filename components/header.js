@@ -11,7 +11,7 @@ export default function Header(){
         <header>
             <Navbar>
                 <Container fluid>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <img
                         alt="FurniFuture" 
                         height="80"
@@ -27,15 +27,15 @@ export default function Header(){
                             style={{ maxHeight: '100px', justifyContent: 'center', flex: 1 }}
                             navbarScroll
                             >
-                            <Nav.Link href="#action1">Avaleht</Nav.Link>
+                            <Nav.Link href="/">Avaleht</Nav.Link>
                             <NavDropdown title="Mööbel" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="#action3">Kontor</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4" disabled>Elutuba</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4" disabled>Magamistuba</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4" disabled>Köök</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4" disabled>Vannituba</NavDropdown.Item>
+                                <NavDropdown.Item href="/products">Kontor</NavDropdown.Item>
+                                <NavDropdown.Item href="/products" disabled>Elutuba</NavDropdown.Item>
+                                <NavDropdown.Item href="/products" disabled>Magamistuba</NavDropdown.Item>
+                                <NavDropdown.Item href="/products" disabled>Köök</NavDropdown.Item>
+                                <NavDropdown.Item href="/products" disabled>Vannituba</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action5" disabled>Something else here</NavDropdown.Item>
+                                <NavDropdown.Item href="#" disabled>Something else here</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="#kontakt">Kontakt</Nav.Link>
                         </Nav>
