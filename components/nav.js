@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav'
 
 export default function NavItems(){
     return(
-        <div>
+        <div style={{width:"15%"}}>
             <Nav defaultActiveKey="/home" className="flex-column">
                 <Nav.Link href="/home">Active</Nav.Link>
                 <Nav.Link eventKey="link-1">Link</Nav.Link>

@@ -13,7 +13,7 @@ export default class Layout extends React.Component{
         return(
             <div>
                 <Header></Header>
-                <div style={{display:"flex"}}>
+                <div style={{display:"flex", marginTop:"30px"}}>
                     <NavItems/>
                     <div className={galleryStyles.gallerymargin} style={{width:"80%"}}>
                         <div className="row row-cols-1 row-cols-md-3 g-6">
