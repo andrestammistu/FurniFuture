@@ -15,7 +15,8 @@ export default class Layout extends React.Component{
                 <Header></Header>
                 <div style={{display:"flex", marginTop:"30px"}}>
                     <NavItems/>
-                    <div className={galleryStyles.gallerymargin} style={{width:"80%", marginLeft:"20px"}}>
+                    <div style={{width:"80%", marginLeft:"20px"}}>
+                        <h1>Uued tooted</h1>
                         <div className="row row-cols-1 row-cols-md-3 g-6">
                                 <Gallery image={"/images/sofa.png"} heading="Elutuba"/>
                                 <Gallery image={"/images/sofa.png"} heading="Magamistuba"/>
