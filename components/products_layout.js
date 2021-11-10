@@ -6,17 +6,20 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Card from 'react-bootstrap/Card';
 import React from "react"
+import Footer from "./footer.js"
+import Filter from "./filter.js"
 
 
 export default class Layout extends React.Component{
     render(){
         return(
             <div>
-                <Header></Header>
+                <Header/>
                 <div style={{display:"flex", marginTop:"30px"}}>
                     <NavItems/>
                     <div style={{width:"80%", marginLeft:"20px"}}>
                         <h1>Uued tooted</h1>
+                        <Filter/>
                         <div className="row row-cols-1 row-cols-md-3 g-6">
                                 <Gallery image={"/images/sofa.png"} heading="Elutuba"/>
                                 <Gallery image={"/images/sofa.png"} heading="Magamistuba"/>
@@ -27,6 +30,7 @@ export default class Layout extends React.Component{
                         </div>
                     </div>
                 </div>
+                <Footer/>
     
             </div>
         )
