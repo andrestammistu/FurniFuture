@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 
 export default function(sequelize) {
-    return sequelize.define('Account', {
+    return sequelize.define('User', {
             email: {
                 type: Sequelize.TEXT,
                 allowNull: false

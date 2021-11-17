@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 
 export default function(sequelize) {
-    return sequelize.define('Product', {
+    return sequelize.define('OrderRow', {
         order_id: {
             type: Sequelize.INTEGER,
             allowNull: false
