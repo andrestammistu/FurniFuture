@@ -22,6 +22,11 @@ export default function(sequelize) {
                 type: Sequelize.DATE,
             }
         }, {
-           
+           hooks: {
+               beforeValidate: (account, options) => {
+                   if(!account.company) account.company = false;
+               }
+               
+           }
         });
 }
