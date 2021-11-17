@@ -16,17 +16,17 @@ export default function(sequelize) {
             }, 
             company: {
                 type: Sequelize.BOOLEAN,
-                allowNull: false
+                allowNull: false,
+                defaultValue: false
             },
             archivedAt: {
                 type: Sequelize.DATE,
             }
         }, {
-           hooks: {
-               beforeValidate: (account, options) => {
-                   if(!account.company) account.company = false;
-               }
-               
-           }
+        //    hooks: {
+        //        beforeValidate: (account, options) => {
+        //            if(!account.company) account.company = false;
+        //        }
+        //    }
         });
 }

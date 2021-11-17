@@ -27,4 +27,25 @@ db.Client = sequelize.models.Client
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
+import User from './user';
+User(sequelize);
+db.User = sequelize.models.User;
+
+import Product from './product';
+Product(sequelize);
+db.Product = sequelize.models.Product;
+
+import Order from './order';
+Order(sequelize);
+db.Order = sequelize.models.Order;
+
+import OrderRow from 'order_row';
+OrderRow(sequelize);
+db.OrderRow = sequelize.models.OrderRow;
+
+import ProductCategory from './product_category';
+ProductCategory(sequelize);
+db.ProductCategory = sequelize.models.ProductCategory; 
+
+
 module.exports = db;
