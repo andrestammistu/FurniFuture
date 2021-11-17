@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 
 export default function(sequelize) {
-    return sequelize.define('Product', {
+    return sequelize.define('ProductCategory', {
         name: {
             type: Sequelize.TEXT,
             allowNull: false
