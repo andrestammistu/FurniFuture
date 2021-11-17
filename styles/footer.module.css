@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+
+
+#footer{
+    background-color: #c18c57;
+    margin-top: 80px;
+}
+
+.footerClass{
+    display: flex;
+    justify-content: space-around;
+}
+
+.padding-top-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
