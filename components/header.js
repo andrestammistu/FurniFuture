@@ -37,7 +37,7 @@ export default function Header(){
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#" disabled>Something else here</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#kontakt">Kontakt</Nav.Link>
+                            <Nav.Link href="/#contact">Kontakt</Nav.Link>
                         </Nav>
                         <Form className="d-flex">
                             <LoginButton></LoginButton>

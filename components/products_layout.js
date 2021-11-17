@@ -30,7 +30,6 @@ export default function Layout(){
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool"/>
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool"/>
                     </div>
-                    
                 </div>
             </div>
             <Footer/>

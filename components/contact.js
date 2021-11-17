@@ -5,7 +5,7 @@ export default function Contact(){
     return(
         <div className="gallerymargin" style={{paddingTop: "100px"}}>
             <div className="about-section padding-top-50">
-                <h1 id="">Meie liikmed</h1> {/*style="text-align:center*/}
+                <h1 id="contact">Meie liikmed</h1> {/*style="text-align:center*/}
                 <p>&nbsp;</p>
                 <div className="row row-cols-1 row-cols-md-4 g-4">
                     <div className="col">
