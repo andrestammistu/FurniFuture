@@ -33,7 +33,6 @@ export default function Footer(){
                 <div className="padding-top-50">
                     <h3>OLULINE TEAVE</h3>
                     <Link href="#"><a>Privaatsuspoliitika</a></Link><br/>
-                    <Link href="#"><a>Privaatsuspoliitika</a></Link><br/>
                     <Link href="#"><a>Tingimused</a></Link><br/>
                     
                 </div>
