@@ -10,7 +10,7 @@ export default function Footer(){
 
             <div className={footerStyles.footerClass}>
 
-                <div class="padding-top-50">
+                <div className="padding-top-50">
                     <a className="navbar-brand" href="#">
                     <Image 
                         src="/images/logo.png" 
