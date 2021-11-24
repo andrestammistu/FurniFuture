@@ -9,16 +9,13 @@ import ProductsGallery from "./products_gallery"
 
 export default function Layout(){
     const router = useRouter();
-    const category = router.query.category
-    const subcategory = router.query.subcategory
     return(
         <div>
             <Header/>
             <div style={{display:"flex", marginTop:"30px"}}>
                 <NavItems/>
                 <div style={{width:"80%", marginLeft:"20px"}}>
-                    <h1>{subcategory}</h1>
-                    {console.log(subcategory)}
+                    <h1>{router.query.subcategory}</h1>
                     <Filter/>
                     <div className="row row-cols-1 row-cols-md-3 g-6">
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool" url={'/product/1'}/>
