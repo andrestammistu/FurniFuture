@@ -1,3 +1,3 @@
-import ProductsPage from "./[category]";
+import ProductsPage from "./[category]/index.js";
 
 export default ProductsPage
