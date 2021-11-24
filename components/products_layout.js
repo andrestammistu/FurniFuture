@@ -23,7 +23,7 @@ export default function Layout(){
                     <h1>{router.query.category}</h1>
                     <Filter/>
                     <div className="row row-cols-1 row-cols-md-3 g-6">
-                        <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool"/>
+                        <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool" url={"/"}/>
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool"/>
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool"/>
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool"/>
