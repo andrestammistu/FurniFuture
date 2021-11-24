@@ -7,7 +7,7 @@ export default function ProductsGallery(props){
             <Gallery image={props.image} heading={props.heading} url={props.url}/>
             <div>
                 <p>{props.price}</p>
-                <p class ="text">{props.body}</p>
+                <p className="text">{props.body}</p>
                 <button>Lisa ostukorvi</button>
             </div>
         </div>

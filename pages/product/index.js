@@ -1,10 +1,10 @@
 import Layout from "../../components/products_layout"
 
-export default function ProductsPage(props){
+export default function ProductPage(props){
     console.log(props);
     return(
         <div>
-            <Layout></Layout>
+            <Layout/>
         </div>
     )
 }
