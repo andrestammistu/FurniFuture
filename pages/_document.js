@@ -1,13 +1,11 @@
 // pages/_document.js
-
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Main, Head, NextScript } from 'next/document'
 
 class MyDocument extends Document {
   render() {
     return (
       <Html>
           <Head>
-              <title>FurniFuture</title>
                 <link 
                     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
                     rel="stylesheet" 

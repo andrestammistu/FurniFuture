@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/modal'
 import React, { useEffect, useState } from "react";
 import Link from 'next/link'
+import styles from '../../styles/button.module.css'
 
 
 
@@ -39,7 +40,7 @@ export default function Basket(){
                         Sule
                     </Button>
                     <Link href="#">
-                        <a style={{backgroundColor:"#0d6efd", textDecoration: "none", color:"white"}}>Vormista ost</a>
+                        <a className={styles.primary}>Vormista ost</a>
                     </Link>
                 </Modal.Footer>
             </Modal>
