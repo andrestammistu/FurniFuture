@@ -1,6 +1,6 @@
 import { DataTypes } from 'sequelize';
 
-export default function(sequelize) {
+export default function User(sequelize) {
     return sequelize.define('User', {
             email: {
                 type: Sequelize.TEXT,

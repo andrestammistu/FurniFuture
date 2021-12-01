@@ -11,5 +11,5 @@ export default function Product(sequelize) {
             allowNull: false
          }
            
-        });
+    });
 }
