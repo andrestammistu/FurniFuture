@@ -26,6 +26,8 @@ export default function Layout(){
                             Convallis convallis tellus id interdum velit laoreet id donec.
                         </p>
                         <h3 className={styles.padding}>HIND: 1000€</h3>
+
+                        <button>Lisa ostukorvi</button>
                     
                     </Col>
                 </Row>
