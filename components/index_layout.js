@@ -37,7 +37,6 @@ export default function Layout(){
 
                 <Container>
 
-                    
                     <div className={galleryStyles.gallerymargin}>
                         <div className="row row-cols-1 row-cols-md-3 g-6">
                             <Gallery image={"/images/sofa.png"} heading="Elutuba" url="/products"/>
@@ -53,6 +52,7 @@ export default function Layout(){
                     <VideoPlayer></VideoPlayer>
                         
                 </Container>
+                
             </main>
 
             <Footer></Footer>

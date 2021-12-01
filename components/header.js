@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Form from 'react-bootstrap/Form'
 import LoginButton from './loginButton'
+import Basket from './basket'
 
 
 export default function Header(){
@@ -37,8 +38,9 @@ export default function Header(){
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#" disabled>Something else here</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#kontakt">Kontakt</Nav.Link>
+                            <Nav.Link href="/#contact">Kontakt</Nav.Link>
                         </Nav>
+                        <Basket/>
                         <Form className="d-flex">
                             <LoginButton></LoginButton>
                         </Form> 

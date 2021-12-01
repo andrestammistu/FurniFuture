@@ -31,13 +31,13 @@ export default function NavItems(){
                         <label for="chaires">Toolid</label><br/>
                         <input type="checkbox" name="other"/>
                         <label for="other">Muu</label> */}
-                        <Link href="/products/lauad">
+                        <Link href="/products/kontor/lauad">
                             <a>Lauad</a>
                         </Link><br/>
-                        <Link href="/products/toolid">
+                        <Link href="/products/kontor/toolid">
                             <a>Toolid</a>
                         </Link><br/>
-                        <Link href="/products/muu">
+                        <Link href="/products/kontor/muu">
                             <a>Muu</a>
                         </Link>
 
