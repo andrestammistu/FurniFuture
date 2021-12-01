@@ -48,4 +48,18 @@ ProductCategory(sequelize);
 db.ProductCategory = sequelize.models.ProductCategory; 
 
 
+db.OrderRow.belongsTo(db.Order, {
+  foreignKey: 'order_id'
+});
+
+db.Order.hasMany(db.OrderRow, {
+  constraints: false,
+  foreignKey: 'order_id'
+});
+
+db.User.belongsTo(db.Order, {
+  foreignKey: 'user_id'
+});
+
+
 module.exports = db;
