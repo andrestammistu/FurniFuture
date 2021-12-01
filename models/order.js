@@ -1,6 +1,6 @@
 import { DataTypes } from 'sequelize';
 
-export default function(sequelize) {
+export default function Order(sequelize) {
     return sequelize.define('Order', {
     user_id: {
        type: Sequelize.INTEGER,

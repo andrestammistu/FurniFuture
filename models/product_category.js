@@ -1,6 +1,6 @@
 import { DataTypes } from 'sequelize';
 
-export default function(sequelize) {
+export default function ProductCategory(sequelize) {
     return sequelize.define('ProductCategory', {
         name: {
             type: Sequelize.TEXT,
