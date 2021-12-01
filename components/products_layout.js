@@ -17,13 +17,14 @@ export default function Layout(){
                 <div style={{width:"80%", marginLeft:"20px"}}>
                     <h1>{router.query.subcategory}</h1>
                     <Filter/>
-                    <div className="row row-cols-1 row-cols-md-3 g-6">
+                    <div className="row row-cols-1 row-cols-md-3 g-6" >
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool" url={'/product/1'}/>
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool"/>
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool"/>
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool"/>
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool"/>
                         <ProductsGallery price="11.4" body="Kalea pakub ülimat mugavust." image={"/images/sofa.png"} heading="Tool"/>
+
                     </div>
                 </div>
             </div>
