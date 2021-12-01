@@ -1,4 +1,4 @@
-import galleryStyles from '../styles/gallery.module.css'
+import galleryStyles from '../../styles/gallery.module.css'
 import Card from 'react-bootstrap/Card';
 import React from 'react';
 

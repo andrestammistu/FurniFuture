@@ -1,4 +1,4 @@
-import Layout from "../../components/single_product_layout"
+import Layout from "../../resources/components/single_product_layout.js"
 
 export default function(){
     return(

@@ -1,5 +1,5 @@
-import Footer from "../components/footer";
-import Layout from "../components/index_layout.js";
+import Footer from "../resources/components/footer.js";
+import Layout from "../resources/components/index_layout.js";
 
 
 

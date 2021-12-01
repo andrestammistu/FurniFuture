@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import footerStyles from '../styles/footer.module.css'
+import footerStyles from '../../styles/footer.module.css'
 
 
 export default function Footer(){

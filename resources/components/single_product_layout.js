@@ -3,7 +3,7 @@ import Header from "./header"
 import Footer from "./footer"
 import Image from 'react-bootstrap/Image'
 import { Container, Row, Col } from "react-bootstrap"
-import styles from '../styles/singleproduct.module.css'
+import styles from '../../styles/singleproduct.module.css'
 
 export default function Layout(){
     return(

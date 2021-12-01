@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Gallery from './gallery.js';
 import Contact from './contact.js'
 import VideoPlayer from './VideoPlayer'
-import galleryStyles from '../styles/gallery.module.css'
+import galleryStyles from '../../styles/gallery.module.css'
 
 
 
