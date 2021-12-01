@@ -26,6 +26,9 @@
     "url": "git+https://github.com/ingeliza/FurniFuture.git"
   },
   "author": "",
+  "engines": {
+    "node": ">=14"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ingeliza/FurniFuture/issues"
