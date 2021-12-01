@@ -1,5 +1,5 @@
 import Button from 'react-bootstrap/Button'
-import Modal from 'react-bootstrap/modal'
+import Modal from 'react-bootstrap/Modal'
 import React, { useEffect, useState } from "react";
 import Link from 'next/link'
 import styles from '../../styles/button.module.css'
