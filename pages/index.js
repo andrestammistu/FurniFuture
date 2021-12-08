@@ -1,5 +1,5 @@
 import Footer from "../resources/components/footer.js";
-import Layout from "../resources/components/index_layout.js";
+import Layout from "../resources/layouts/index_layout.js";
 import Head from "next/head";
 
 

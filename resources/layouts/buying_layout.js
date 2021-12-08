@@ -1,5 +1,5 @@
-import Header from "./header.js"
-import Footer from "./footer.js"
+import Header from "../components/header.js"
+import Footer from "../components/footer.js"
 import Accordion from 'react-bootstrap/Accordion'
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'

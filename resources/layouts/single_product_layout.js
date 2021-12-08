@@ -1,9 +1,11 @@
-import ProductsGallery from "./products_gallery"
-import Header from "./header"
-import Footer from "./footer"
+import ProductsGallery from "../components/products_gallery"
+import Header from "../components/header"
+import Footer from "../components/footer"
 import Image from 'react-bootstrap/Image'
 import { Container, Row, Col } from "react-bootstrap"
 import styles from '../../styles/singleproduct.module.css'
+import buttonStyles from '../../styles/button.module.css'
+import Link from 'next/link'
 
 export default function Layout(){
     return(
@@ -27,7 +29,9 @@ export default function Layout(){
                         </p>
                         <h3 className={styles.padding}>HIND: 1000€</h3>
 
-                        <button>Lisa ostukorvi</button>
+                        <Link href="#">
+                            <a className={buttonStyles.primary}>Lisa ostukorvi</a>
+                        </Link>
                     
                     </Col>
                 </Row>

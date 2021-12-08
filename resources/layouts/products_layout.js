@@ -1,10 +1,10 @@
-import Header from "./header.js"
-import NavItems from "./nav.js"
+import Header from "../components/header.js"
+import NavItems from "../components/nav.js"
 import React from "react"
-import Footer from "./footer.js"
-import Filter from "./filter.js"
+import Footer from "../components/footer.js"
+import Filter from "../components/filter.js"
 import { useRouter } from "next/dist/client/router"
-import ProductsGallery from "./products_gallery"
+import ProductsGallery from "../components/products_gallery"
 
 
 export default function Layout(){

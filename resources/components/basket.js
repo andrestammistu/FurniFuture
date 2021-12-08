@@ -39,7 +39,7 @@ export default function Basket(){
                     <Button variant="secondary" onClick={handleClose}>
                         Sule
                     </Button>
-                    <Link href="#">
+                    <Link href="/buying">
                         <a className={styles.primary}>Vormista ost</a>
                     </Link>
                 </Modal.Footer>

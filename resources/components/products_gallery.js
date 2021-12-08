@@ -1,4 +1,6 @@
 import Gallery from "./gallery";
+import buttonStyles from '../../styles/button.module.css'
+import Link from 'next/link'
 
 export default function ProductsGallery(props){
     return(
@@ -8,7 +10,9 @@ export default function ProductsGallery(props){
             <div>
                 <p className="text">{props.body}</p>
                 <p>{props.price}</p>
-                <button>Lisa ostukorvi</button>
+                <Link href="#">
+                    <a className={buttonStyles.primary}>Lisa ostukorvi</a>
+                </Link>
             </div>
         </div>
     )

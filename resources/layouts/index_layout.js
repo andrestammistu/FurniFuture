@@ -1,10 +1,10 @@
-import Header from './header.js'
-import Footer from './footer.js'
+import Header from '../components/header.js'
+import Footer from '../components/footer.js'
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
-import Gallery from './gallery.js';
-import Contact from './contact.js'
-import VideoPlayer from './VideoPlayer'
+import Gallery from '../components/gallery.js';
+import Contact from '../components/contact.js'
+import VideoPlayer from '../components/VideoPlayer'
 import galleryStyles from '../../styles/gallery.module.css'
 
 
@@ -49,7 +49,9 @@ export default function Layout(){
                     </div>
 
                     <Contact></Contact>
-                    <VideoPlayer></VideoPlayer>
+                    <VideoPlayer src={"https://player.vimeo.com/video/611482353?h=ce441b7891&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay:1"} 
+                                title="Furnifuture video">
+                    </VideoPlayer>
                         
                 </Container>
                 

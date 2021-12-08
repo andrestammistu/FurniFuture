@@ -1,4 +1,4 @@
-import Layout from "../../resources/components/single_product_layout.js"
+import Layout from "../../resources/layouts/single_product_layout.js"
 
 export default function productId() {
     return(
